@@ -32,6 +32,10 @@
    width: 80%;
 }
 
+#deals div#deal1, div#deal2, div#deal3, div#deal4 {
+   min-height: 40%;
+}
+
 .section {
    background: #2196F3;
 }
