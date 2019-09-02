@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <SOCCERBALLS>
+      <BALL>
+         <NAME>Soccer Ball</NAME>
+         <CATEGORY>Soccer</CATEGORY>
+         <DESCRIPTION>
+            <SIZE>5</SIZE>
+            <BRAND>Addidas</BRAND>
+            <COLOR>Blue</COLOR>
+         </DESCRIPTION>
+         <DISCOUNT>15%</DISCOUNT>
+         <PRICE>49.99</PRICE>
+      </BALL>
+   </SOCCERBALLS>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <BASKETBALLS>
+      <BALL>
+      <NAME>Basketball</NAME>
+         <CATEGORY>Basketball</CATEGORY>
+         <DESCRIPTION>
+            <SIZE>4</SIZE>
+            <BRAND>Wilson</BRAND>
+            <COLOR>Regular</COLOR>
+            <IsOUTDOOR>false</IsOUTDOOR>
+         </DESCRIPTION>
+         <DISCOUNT>0%</DISCOUNT>
+         <PRICE>29.99</PRICE>
+      </BALL>
+   </BASKETBALLS>

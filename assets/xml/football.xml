@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <FOOTBALLS>
+      <BALL>
+         <NAME>Football</NAME>
+         <CATEGORY>Football</CATEGORY>
+         <DESCRIPTION>
+            <SIZE>Large</SIZE>
+            <BRAND>NFL</BRAND>
+            <COLOR>Regular</COLOR>
+         </DESCRIPTION>
+         <DISCOUNT>10%</DISCOUNT>
+         <PRICE>20</PRICE>
+      </BALL>
+   </FOOTBALLS>
