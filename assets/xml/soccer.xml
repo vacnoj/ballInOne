@@ -4,12 +4,10 @@
       <BALL>
          <NAME>Soccer Ball</NAME>
          <CATEGORY>Soccer</CATEGORY>
-         <DESCRIPTION>
-            <SIZE>5</SIZE>
-            <BRAND>Addidas</BRAND>
-            <COLOR>Blue</COLOR>
-            <IsOUTDOOR>false</IsOUTDOOR>
-         </DESCRIPTION>
+         <SIZE>5</SIZE>
+         <BRAND>Addidas</BRAND>
+         <COLOR>Blue</COLOR>
+         <IsOUTDOOR>false</IsOUTDOOR>
          <DISCOUNT>15%</DISCOUNT>
          <PRICE>49.99</PRICE>
       </BALL>

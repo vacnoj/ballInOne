@@ -4,12 +4,10 @@
       <BALL>
       <NAME>Basketball</NAME>
       <CATEGORY>Basketball</CATEGORY>
-         <DESCRIPTION>
-            <SIZE>4</SIZE>
-            <BRAND>Wilson</BRAND>
-            <COLOR>Regular</COLOR>
-            <IsOUTDOOR>false</IsOUTDOOR>
-         </DESCRIPTION>
+         <SIZE>4</SIZE>
+         <BRAND>Wilson</BRAND>
+         <COLOR>Regular</COLOR>
+         <IsOUTDOOR>false</IsOUTDOOR>
          <DISCOUNT>0%</DISCOUNT>
          <PRICE>29.99</PRICE>
       </BALL>

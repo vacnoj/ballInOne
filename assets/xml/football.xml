@@ -4,12 +4,10 @@
       <BALL>
          <NAME>Football</NAME>
          <CATEGORY>Football</CATEGORY>
-         <DESCRIPTION>
-            <SIZE>Large</SIZE>
-            <BRAND>NFL</BRAND>
-            <COLOR>Regular</COLOR>
-            <IsOUTDOOR>false</IsOUTDOOR>
-         </DESCRIPTION>
+         <SIZE>Large</SIZE>
+         <BRAND>NFL</BRAND>
+         <COLOR>Regular</COLOR>
+         <IsOUTDOOR>false</IsOUTDOOR>
          <DISCOUNT>10%</DISCOUNT>
          <PRICE>20</PRICE>
       </BALL>
