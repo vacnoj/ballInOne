@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="allInventory.xsl"?>
-   <DEALS>
+   <INVENTORY>
       <BALL>
          <NAME>Football</NAME>
          <CATEGORY>Football</CATEGORY>
@@ -11,4 +11,4 @@
          <DISCOUNT>10%</DISCOUNT>
          <PRICE>20</PRICE>
       </BALL>
-   </DEALS>
+   </INVENTORY>
