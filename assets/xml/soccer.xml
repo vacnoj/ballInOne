@@ -7,6 +7,7 @@
             <SIZE>5</SIZE>
             <BRAND>Addidas</BRAND>
             <COLOR>Blue</COLOR>
+            <IsOUTDOOR>false</IsOUTDOOR>
          </DESCRIPTION>
          <DISCOUNT>15%</DISCOUNT>
          <PRICE>49.99</PRICE>

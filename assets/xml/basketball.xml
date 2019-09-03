@@ -2,7 +2,7 @@
    <BASKETBALLS>
       <BALL>
       <NAME>Basketball</NAME>
-         <CATEGORY>Basketball</CATEGORY>
+      <CATEGORY>Basketball</CATEGORY>
          <DESCRIPTION>
             <SIZE>4</SIZE>
             <BRAND>Wilson</BRAND>

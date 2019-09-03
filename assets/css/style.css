@@ -2,9 +2,14 @@
    color: white;
 }
 
-/* body {
-   overflow: scroll;
-} */
+nav {
+   position: fixed;
+   top: 0;
+   z-index: 100;
+}
+.contents {
+   padding-top: 5%;
+}
 
 #searchBar {
    width: 20%;
@@ -14,12 +19,6 @@
    height: auto;
    background-size: cover;
  }
-
-/* .container {
-   width: 80%; 
-   background-image: url("../images/soccerField.jpeg");
-   background-size: cover;
-} */
 
 .row {
    background: rgba(1,1,1,.2);

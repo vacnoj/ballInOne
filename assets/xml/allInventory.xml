@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="allInventory.xsl"?>
    <INVENTORY>
       <BALL>
          <NAME>Soccer Ball</NAME>
          <CATEGORY>Soccer</CATEGORY>
-         <DESCRIPTION>
-            <SIZE>5</SIZE>
-            <BRAND>Addidas</BRAND>
-            <COLOR>Blue</COLOR>
-         </DESCRIPTION>
+         <SIZE>5</SIZE>
+         <BRAND>Addidas</BRAND>
+         <COLOR>Blue</COLOR>
+         <IsOUTDOOR>Null</IsOUTDOOR>
          <DISCOUNT>0%</DISCOUNT>
          <PRICE>20</PRICE>
       </BALL>
