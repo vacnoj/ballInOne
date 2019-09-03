@@ -12,7 +12,7 @@
 
       <h3>All Inventory</h3>
 
-      <table>
+      <table border="1">
          <tr>
             <th>Name</th>
             <th>Category</th>
