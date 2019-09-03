@@ -7,6 +7,23 @@ nav {
    top: 0;
    z-index: 100;
 }
+
+#menuIcon {
+   width: 10%;
+}
+
+#dropdownNav {
+    background: #2196F3
+}
+
+#dropdownNav li {
+   border-bottom: solid #ffffff thin;
+}
+
+#dropdownNav li>a {
+   color: #ffffff;
+}
+
 .contents {
    padding-top: 5%;
 }
@@ -20,9 +37,14 @@ nav {
    background-size: cover;
  }
 
-.row {
+.rowShade {
    background: rgba(1,1,1,.2);
    height: 500px;
+}
+
+.background {
+   background: rgba(1,1,1,.2);
+   height: 60vh;
 }
 
 #deals img {
@@ -37,4 +59,8 @@ nav {
 
 .section {
    background: #2196F3;
+}
+
+.no-margin {
+   margin: 0 !important;
 }
