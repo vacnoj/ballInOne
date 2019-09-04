@@ -8,22 +8,12 @@ $(document).ready(function () {
   $('.tooltipped').tooltip();
   console.log("tooltip loaded");
 
+var date = new Date().toLocaleDateString("en-US");
+$('#date').text(date);
 
-  // $(".background").slideUp();
+$('#zipcode').hide();
 
-  // $(window).scroll(function () {
-  //   if ($(window).scrollTop() + $(window).height() == $(document).height()) {
-  //     $(".background").slideDown(2000)
-  //     // setTimeout(scrollDown, 1000);
-  //   } 
-  //   if ($(window).scrollTop() + $(window).height() < $(document).height() - $(window).height()+100){
-  //     $(".background").slideUp();
-  //   } 
-
-  //   function scrollDown() {
-  //     $(window).scrollTop($(document).height() - $(window).height());
-  //   }
-  // });
+alert(`Welcome to ${document.title}! Today's date is ${date}`);
 
   $('#submit').click(function () {
     // event.preventDefault();
@@ -55,9 +45,6 @@ $(document).ready(function () {
     }
   });
 
-  var date = new Date().toLocaleDateString("en-US");
-  $('#date').text(date);
-
   var oops = false;
 
   $('#oops').click(function() {
@@ -66,18 +53,31 @@ $(document).ready(function () {
       $('#oops').hide();
       oopsie();
       oops = true;
-      setTimeout(showLogo,8000);
+      $('#oops').attr("data-tooltip", "Click if the coast is clear!");
+      setTimeout(showLogo, 8000);
+      setTimeout(showFake, 8000);
     } 
     else {
       $('#oops').hide();
-      fixIt();
+      hideFake();
       oops = false;
-      setTimeout(showLogo,8000);
+      $('#oops').attr("data-tooltip", "Click if you are in class and your teacher is behind you...");
+      setTimeout(showLogo, 8000);
+      setTimeout(fixIt, 2000);
     }
   });
 
   function showLogo() {
     $('#oops').show();
+  }
+
+  function showFake() {
+    $('.contents').append('<iframe id="fakeSite" src="https://www.coloradotech.edu/current-students">');
+  }
+
+  function hideFake() {
+    $('#fakeSite').slideUp(2000);
+    $('.contents').remove($('#fakeSite'));
   }
 
   function oopsie() {
@@ -97,5 +97,37 @@ $(document).ready(function () {
     $('#parallax-4').slideDown(2000);
     $('#contactMe').slideDown(2000);
   }
+
+  $('#getWeather').click(function getWeather() {
+    var status;
+    $('#zipcode').slideDown(1000);
+    $('#getWeather').text("Submit");
+    var zipcode = $('#zipcode').val();
+    if (zipcode.match(/\d{5}/)) {
+      var apiKey = "54ca468c668707139435370a3f6563d8";
+      var queryURL = `https://api.openweathermap.org/data/2.5/weather?zip=${zipcode}&appid=${apiKey}`
+      $.ajax({
+        url: queryURL,
+        method: "GET",
+      }).done(function(response) {
+        status=200;
+    
+        console.log(response);
+        tempF = ((response.main.temp - 273.15) * 9/5 + 32);
+         
+        var tempF = Math.round(tempF,2);
+        $('#zipcode').val('');
+        $('#zipcode').hide();
+        $('#getWeather').text(response.name +" " + tempF + "°");
+      }).fail(function() {
+        alert("Invalid zipcode");
+      });
+    }
+     else { 
+       if (zipcode) {
+         alert("Invalid zipcode");
+       }
+     }
+  });
 
 });

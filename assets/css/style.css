@@ -64,3 +64,19 @@ nav {
 .no-margin {
    margin: 0 !important;
 }
+
+#date {
+   position: fixed;
+   top: 0;
+   right: 0;
+   padding-right: 10px;
+}
+
+#zipcode {
+   width: 15%;
+}
+
+#fakeSite {
+   height: 100vh;
+   width: 100vw;
+}
