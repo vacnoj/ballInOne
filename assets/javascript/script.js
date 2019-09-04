@@ -140,16 +140,16 @@ $('#zipcode').hide();
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
-      myFunction(this);
+        getAllInventory(this);
       }
     };
     xhttp.open("GET", "assets/xml/allInventory.xml", true);
     xhttp.send();
   }
-  function myFunction(xml) {
+  function getAllInventory(xml) {
     var i;
     var xmlDoc = xml.responseXML;
-    var table=`<tr>
+    var table=`<tr id="tableHead">
                  <th>Category</th>
                  <th>Name</th>
                  <th>Size</th>
