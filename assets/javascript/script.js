@@ -99,7 +99,6 @@ alert(`Welcome to ${document.title}! Today's date is ${date}`);
   }
 
   $('#getWeather').click(function getWeather() {
-    var status;
     $('#zipcode').slideDown(1000);
     $('#getWeather').text("Submit");
     var zipcode = $('#zipcode').val();
@@ -110,7 +109,6 @@ alert(`Welcome to ${document.title}! Today's date is ${date}`);
         url: queryURL,
         method: "GET",
       }).done(function(response) {
-        status=200;
     
         console.log(response);
         tempF = ((response.main.temp - 273.15) * 9/5 + 32);
@@ -128,6 +126,13 @@ alert(`Welcome to ${document.title}! Today's date is ${date}`);
          alert("Invalid zipcode");
        }
      }
+  });
+
+  $.ajax({
+    url:"/../xml/allInventory.xml",
+    method: "GET",
+  }).done(function(response) {
+    console.log(response);
   });
 
 });
