@@ -173,9 +173,9 @@ $('#zipcode').hide();
       x[i].getElementsByTagName("COLOR")[0].childNodes[0].nodeValue +
       "</td><td>" +
       x[i].getElementsByTagName("IsOUTDOOR")[0].childNodes[0].nodeValue +
-      "</td><td>" +
+      "</td><td>" + "$" +
       x[i].getElementsByTagName("PRICE")[0].childNodes[0].nodeValue +
-      "</td><td>" +
+      "</td><td>" + 
       x[i].getElementsByTagName("DISCOUNT")[0].childNodes[0].nodeValue +
       "</td></tr>";
     }
