@@ -149,13 +149,34 @@ $('#zipcode').hide();
   function myFunction(xml) {
     var i;
     var xmlDoc = xml.responseXML;
-    var table="<tr><th>Name</th><th>Size</th></tr>";
+    var table=`<tr>
+                 <th>Category</th>
+                 <th>Name</th>
+                 <th>Size</th>
+                 <th>Brand</th>
+                 <th>Color</th>
+                 <th>Outdoor Ball?</th>
+                 <th>Price</th>
+                 <th>Discount %</th>
+              </tr>`;
     var x = xmlDoc.getElementsByTagName("BALL");
     for (i = 0; i <x.length; i++) { 
       table += "<tr><td>" +
+      x[i].getElementsByTagName("CATEGORY")[0].childNodes[0].nodeValue +
+      "</td><td>" +
       x[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue +
       "</td><td>" +
       x[i].getElementsByTagName("SIZE")[0].childNodes[0].nodeValue +
+      "</td><td>" +
+      x[i].getElementsByTagName("BRAND")[0].childNodes[0].nodeValue +
+      "</td><td>" +
+      x[i].getElementsByTagName("COLOR")[0].childNodes[0].nodeValue +
+      "</td><td>" +
+      x[i].getElementsByTagName("IsOUTDOOR")[0].childNodes[0].nodeValue +
+      "</td><td>" +
+      x[i].getElementsByTagName("PRICE")[0].childNodes[0].nodeValue +
+      "</td><td>" +
+      x[i].getElementsByTagName("DISCOUNT")[0].childNodes[0].nodeValue +
       "</td></tr>";
     }
     $('#allInventory').append(table);

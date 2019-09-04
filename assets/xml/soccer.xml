@@ -11,4 +11,15 @@
          <DISCOUNT>15%</DISCOUNT>
          <PRICE>49.99</PRICE>
       </BALL>
+
+      <BALL>
+         <NAME>Soccer Ball</NAME>
+         <CATEGORY>Soccer</CATEGORY>
+         <SIZE>5</SIZE>
+         <BRAND>Addidas</BRAND>
+         <COLOR>Blue</COLOR>
+         <IsOUTDOOR>Null</IsOUTDOOR>
+         <DISCOUNT>0%</DISCOUNT>
+         <PRICE>20</PRICE>
+      </BALL>
    </INVENTORY>

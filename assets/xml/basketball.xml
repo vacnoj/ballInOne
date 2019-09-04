@@ -2,8 +2,8 @@
 <?xml-stylesheet type="text/xsl" href="allInventory.xsl"?>
    <INVENTORY>
       <BALL>
-      <NAME>Basketball</NAME>
-      <CATEGORY>Basketball</CATEGORY>
+         <NAME>Basketball</NAME>
+         <CATEGORY>Basketball</CATEGORY>
          <SIZE>4</SIZE>
          <BRAND>Wilson</BRAND>
          <COLOR>Regular</COLOR>

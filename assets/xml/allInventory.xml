@@ -11,4 +11,39 @@
          <DISCOUNT>0%</DISCOUNT>
          <PRICE>20</PRICE>
       </BALL>
+
+      <BALL>
+         <NAME>Soccer Ball</NAME>
+         <CATEGORY>Soccer</CATEGORY>
+         <SIZE>5</SIZE>
+         <BRAND>Addidas</BRAND>
+         <COLOR>Blue</COLOR>
+         <IsOUTDOOR>false</IsOUTDOOR>
+         <DISCOUNT>15%</DISCOUNT>
+         <PRICE>49.99</PRICE>
+      </BALL>
+
+      <BALL>
+         <NAME>Basketball</NAME>
+         <CATEGORY>Basketball</CATEGORY>
+         <SIZE>4</SIZE>
+         <BRAND>Wilson</BRAND>
+         <COLOR>Regular</COLOR>
+         <IsOUTDOOR>false</IsOUTDOOR>
+         <DISCOUNT>0%</DISCOUNT>
+         <PRICE>29.99</PRICE>
+      </BALL>
+
+      <BALL>
+         <NAME>Football</NAME>
+         <CATEGORY>Football</CATEGORY>
+         <SIZE>Large</SIZE>
+         <BRAND>NFL</BRAND>
+         <COLOR>Regular</COLOR>
+         <IsOUTDOOR>false</IsOUTDOOR>
+         <DISCOUNT>10%</DISCOUNT>
+         <PRICE>20</PRICE>
+      </BALL>
+
+
    </INVENTORY>
