@@ -158,7 +158,7 @@ $('#zipcode').hide();
       x[i].getElementsByTagName("SIZE")[0].childNodes[0].nodeValue +
       "</td></tr>";
     }
-    document.getElementById("allInventory").innerHTML = table;
+    $('#allInventory').append(table);
   }
   
   loadDoc();
