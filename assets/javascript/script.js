@@ -13,7 +13,7 @@ $('#date').text(date);
 
 $('#zipcode').hide();
 
-// alert(`Welcome to ${document.title}! Today's date is ${date}`);
+alert(`Welcome to ${document.title}! Today's date is ${date}`);
 
   $('#submit').click(function () {
     // event.preventDefault();
