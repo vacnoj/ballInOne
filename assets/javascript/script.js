@@ -129,7 +129,7 @@ alert(`Welcome to ${document.title}! Today's date is ${date}`);
   });
 
   $.ajax({
-    url:"/../xml/allInventory.xml",
+    url:"../xml/allInventory.xml",
     method: "GET",
   }).done(function(response) {
     console.log(response);
