@@ -77,7 +77,7 @@ alert(`Welcome to ${document.title}! Today's date is ${date}`);
 
   function hideFake() {
     $('#fakeSite').slideUp(2000);
-    $('.contents').remove($('#fakeSite'));
+    $('#fakeSite').remove();
   }
 
   function oopsie() {
