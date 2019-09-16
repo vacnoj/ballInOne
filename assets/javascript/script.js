@@ -7,13 +7,19 @@ $(document).ready(function () {
   console.log("dropdown loaded");
   $('.tooltipped').tooltip();
   console.log("tooltip loaded");
+  $('.modal').modal();
+  console.log("modal loaded");
+
 
 var date = new Date().toLocaleDateString("en-US");
-$('#date').text(date);
+$('.today').text(date);
 
 $('#zipcode').hide();
 
-alert(`Welcome to ${document.title}! Today's date is ${date}`);
+if (location.pathname.includes("index.html")) {
+  $('.modal').modal('open');
+  // alert(`Welcome to ${document.title}! Today's date is ${date}`);
+}
 
   $('#submit').click(function () {
     // event.preventDefault();

@@ -88,3 +88,7 @@ nav {
 #tableHead {
    background-color: #0c69b3;
 }
+
+.modal, .modal-footer {
+   background: black !important; 
+}
